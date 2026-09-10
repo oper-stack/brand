@@ -1,0 +1,42 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  html, body { margin: 0; width: 800px; height: 450px; overflow: hidden; }
+  body { background: #0B1017; color: #F5F2EC; font-family: "DM Sans", system-ui, sans-serif; position: relative; }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(61,184,169,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(61,184,169,.07) 1px, transparent 1px); background-size: 60px 60px; }
+  .glow { position: absolute; right: -160px; top: -200px; width: 640px; height: 640px; border-radius: 50%; background: radial-gradient(circle, rgba(61,184,169,.30), transparent 62%); }
+  .wrap { position: absolute; left: 28px; right: 28px; top: 28px; bottom: 28px; display: flex; flex-direction: column; gap: 22px; }
+  .head { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; }
+  h1 { font-family: Fraunces, Georgia, serif; font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -.5px; line-height: 1.1; }
+  .brand { font-family: Fraunces, Georgia, serif; font-size: 26px; font-weight: 600; white-space: nowrap; } .brand span { color: #3DB8A9; }
+  .term { flex: 1; background: #070B10; border: 1px solid rgba(255,255,255,.1); border-radius: 14px; box-shadow: 0 30px 80px rgba(0,0,0,.55); overflow: hidden; display: flex; flex-direction: column; }
+  .bar { display: flex; align-items: center; gap: 8px; padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,.07); }
+  .bar i { width: 12px; height: 12px; border-radius: 50%; background: #2c333a; } .bar i:nth-child(1) { background: #e0685f; } .bar i:nth-child(2) { background: #e5b545; } .bar i:nth-child(3) { background: #62c26a; }
+  .bar span { margin-left: 10px; font-family: "JetBrains Mono", monospace; font-size: 13px; color: #8B939E; }
+  pre { margin: 0; padding: 18px 22px; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 9.6px; line-height: 1.5; color: #d8dee3; white-space: pre; }
+  .ok { color: #62c26a; } .fail { color: #ff8b80; } .warn { color: #f2c76b; } .dim { color: #6b7681; } .cmd { color: #E8B84A; } .k { color: #3DB8A9; } .s { color: #c9d7a5; }
+  .foot { font-size: 18px; color: #8B939E; display: flex; justify-content: space-between; }
+</style></head><body><div class="grid"></div><div class="glow"></div>
+<div class="wrap">
+  <div class="head"><h1>Fifteen gates for content sites</h1><div class="brand">Oper<span>Stack</span></div></div>
+  <div class="term"><div class="bar"><i></i><i></i><i></i><span>npx @operstack/gates</span></div><pre><span class="cmd">$ npx @operstack/gates</span>
+
+  OperStack Gates
+  ------------------------------------------------------------------------
+  <span class="ok">OK  </span>  01 characters             corpus clean
+  <span class="ok">OK  </span>  02 mdx-compile            1660 file(s) compile
+  <span class="fail">FAIL</span>  03 frontmatter            59 issue(s)
+  <span class="fail">FAIL</span>  04 structure              12 structural issue(s)
+  <span class="fail">FAIL</span>  05 duplication            9 shared block(s) on 64 page(s), 30 near-duplicate
+  <span class="fail">FAIL</span>  06 shared-sentences       27 sentence(s) and 4 fragment(s) on 3+ pages
+  <span class="fail">FAIL</span>  07 hollow-sections        1 hollow section(s), 23 finding(s)
+  <span class="fail">FAIL</span>  08 internal-links         1 broken internal URL(s) in 1760 built pages
+  <span class="warn">WARN</span>  09 link-semantics         205 anchor(s) disagree with their target
+  <span class="warn">WARN</span>  10 meta                   1 meta issue(s)
+  <span class="warn">WARN</span>  11 readability            646 readability flag(s)
+  <span class="ok">OK  </span>  12 images                 2390 image URL(s) return 200
+  <span class="fail">FAIL</span>  13 redirects              4 redirect problem(s) in 268 rules
+  <span class="fail">FAIL</span>  14 ai-index               4 disagreement(s) between public/llms.txt and the site
+<span class="k">▌</span></pre></div>
+  <div class="foot"><span>MIT, one command, 13 seconds on 1,660 pages</span><span>oper-stack.com</span></div>
+</div></body></html>
