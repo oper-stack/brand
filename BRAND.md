@@ -43,7 +43,7 @@ Product documents (the gates PDF, the audit report) use the same family in a pri
 ## Social profiles
 
 - Handle everywhere: `operstack` (fallback `oper_stack`, then `operstackhq`).
-- Bio (160 characters): "Tools for content sites that have to rank, be cited and convert. Fifteen free gates, an Astro starter, a Claude Code plugin, an audit. npx @operstack/gates"
+- Bio (160 characters): "Tools for content sites that have to rank, be cited and convert. Sixteen free gates, an Astro starter, a Claude Code plugin, an audit. npx @operstack/gates"
 - Link: https://oper-stack.com
 - Avatar: `avatar.png`. Cover: `og-default.png` cropped to the platform's ratio.
 
